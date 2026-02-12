@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="g3" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffd9ee" />
+      <stop offset="1" stop-color="#ff6fa3" />
+    </linearGradient>
+  </defs>
+  <circle cx="150" cy="150" r="140" fill="url(#g3)" stroke="#ff5b99" stroke-width="8" />
+  <text x="50%" y="54%" font-family="Segoe UI, Arial, sans-serif" font-size="48" fill="white" text-anchor="middle" dominant-baseline="middle">Hello</text>
+</svg>
