@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yağmur'un Kahve Köşesi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: #fff0f5;
+    color: #5d4037;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.kahve-karti {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border: 2px solid #ffb6c1;
+    transition: transform 0.3s;
+}
+
+.kahve-karti:hover {
+    transform: scale(1.03);
+}
+
+.kahve-karti img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.kahve-icerik {
+    padding: 20px;
+}
+
+.fiyat {
+    background-color: #ff69b4;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #795548;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🎀 kahve köşesi premium menü</h1>
+</header>
+
+<div class="menu-container">
+
+    <div class="kahve-karti">
+        <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2" alt="karamel macchiato">
+        <div class="kahve-icerik">
+            <h2>karamel macchiato</h2>
+            <p>espresso, vanilya şurubu, süt köpüğü ve karamel sos.</p>
+            <div class="fiyat">300 tl</div>
+            <button onclick="siparis('karamel macchiato')">sipariş ver</button>
+        </div>
+    </div>
+
+    <div class="kahve-karti">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="white chocolate mocha">
+        <div class="kahve-icerik">
+            <h2>white chocolate mocha</h2>
+            <p>beyaz çikolata sosu ve yoğun espresso lezzeti.</p>
+            <div class="fiyat">400 tl</div>
+            <button onclick="siparis('white chocolate mocha')">sipariş ver</button>
+        </div>
+    </div>
+
+    <div class="kahve-karti">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="americano">
+        <div class="kahve-icerik">
+            <h2>americano</h2>
+            <p>saf espresso ve sıcak su ile güçlü aroma.</p>
+            <div class="fiyat">250 tl</div>
+            <button onclick="siparis('americano')">sipariş ver</button>
+        </div>
+    </div>
+
+    <div class="kahve-karti">
+        <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096" alt="flat white">
+        <div class="kahve-icerik">
+            <h2>flat white</h2>
+            <p>kadifemsi süt dokusu ve çift shot espresso.</p>
+            <div class="fiyat">300 tl</div>
+            <button onclick="siparis('flat white')">sipariş ver</button>
+        </div>
+    </div>
+
+    <div class="kahve-karti">
+        <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187" alt="mocha deluxe">
+        <div class="kahve-icerik">
+            <h2>mocha deluxe</h2>
+            <p>çikolata, espresso ve krema birleşimi.</p>
+            <div class="fiyat">400 tl</div>
+            <button onclick="siparis('mocha deluxe')">sipariş ver</button>
+        </div>
+    </div>
+
+</div>
+
+<script>
+function siparis(kahveAdi) {
+    alert(kahveAdi + " siparişiniz alınmıştır :)");
+}
+</script>
+
+</body>
+</html>
